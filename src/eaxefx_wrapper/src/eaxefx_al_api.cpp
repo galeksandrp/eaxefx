@@ -1132,7 +1132,7 @@ try
 			special_device_name.assign(device_name_sv.data(), device_name_sv.size());
 		}
 
-		al_device = al_alc_symbols_->alcOpenDevice(nullptr);
+		al_device = al_alc_symbols_->alcOpenDevice(NULL);
 	}
 
 	if (!al_device)
